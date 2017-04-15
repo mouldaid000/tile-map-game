@@ -27,9 +27,9 @@ public class Game extends Canvas implements KeyListener {
 
     public Game() {
         try{
-            URL url = Thread.currentThread().getContextClassLoader().getResource("res/sprite.gif");
+            URL url = Thread.currentThread().getContextClassLoader().getResource("res/sprite.png");
             if(url == null){
-                System.err.println("Unable to find sprite: res/sprite.gif");
+                System.err.println("Unable to find sprite: res/sprite.png");
                 System.exit(0);
             }
             sprite = ImageIO.read(url);
@@ -106,23 +106,9 @@ public class Game extends Canvas implements KeyListener {
         }
     }
 
-
-    public static boolean isLeft(){
-        return left;
-    }
-    public static boolean isRight(){
-        return right;
-    }
-    public static boolean isUp(){
-        return up;
-    }
-    public static boolean isDown(){
-        return down;
-    }
-
     @Override
     public void keyTyped(KeyEvent e) {
-
+        //unused
     }
 
     @Override
@@ -156,5 +142,4 @@ public class Game extends Canvas implements KeyListener {
             down = false;
         }
     }
-
 }

@@ -8,7 +8,7 @@ public class Map {
     private static final int BLOCKED = 1;
     private static final int MAP_WIDTH = 15;
     private static final int MAP_HEIGHT = 15;
-    public static final int TILE_SIZE = 20;
+    public static final int TILE_SIZE = 25;
     private int[][] map = new int[MAP_WIDTH][MAP_HEIGHT];
 
     public Map(){
