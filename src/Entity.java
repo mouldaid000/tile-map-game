@@ -45,12 +45,12 @@ public class Entity {
 
         return true;
     }
-    public  void paint(Graphics2D g){
+    public void paint(Graphics2D g){
 
         int xp = (int)(Map.TILE_SIZE * x);
         int yp = (int)(Map.TILE_SIZE * y);
-        g.rotate(ang, xp, yp);
-        g.drawImage(image,(int)(xp-16), (int)(yp-16),null);
-        g.rotate(-ang,xp,yp);
+        g.rotate(ang,xp+size/2,yp+size/2);
+        g.drawImage(image,(xp-16), (yp-16),null);
+        g.rotate(-ang,xp+size/2,yp+size/2);
     }
 }

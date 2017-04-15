@@ -20,6 +20,8 @@ public class Game extends Canvas implements KeyListener {
     static boolean left, right, up, down;
     private Map map;
     private Entity player;
+    private Map[][] world;
+    private int mapSize = 5;
 
     public static void main(String[] args) {
         new Game();
